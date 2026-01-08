@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="株式会社GMへのお問い合わせ。経営課題の無料相談を承っております。">
+    <title>お問い合わせ | 株式会社GM</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- ヘッダー -->
+    <header class="header">
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">GM</div>
+                <span>株式会社GM</span>
+            </a>
+            
+            <nav>
+                <div class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">ホーム</a></li>
+                    <li><a href="cxo-cloud.html">CXOクラウド</a></li>
+                    <li><a href="hr-cloud.html">HRクラウド</a></li>
+                    <li><a href="dx-cloud.html">DXクラウド</a></li>
+                    <li><a href="about.html">会社概要</a></li>
+                    <li><a href="contact.html" class="cta-button">お問い合わせ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ヒーローセクション -->
+    <section class="hero">
+        <div class="hero-container">
+            <h1>お問い合わせ</h1>
+            <p class="hero-subtitle">まずは無料相談から</p>
+            <p class="hero-description">
+                貴社の経営課題をお聞かせください。<br>
+                最適なソリューションをご提案いたします。
+            </p>
+        </div>
+    </section>
+
+    <!-- お問い合わせフォーム -->
+    <section class="section">
+        <div class="container">
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <label for="company">会社名 <span class="required">*</span></label>
+                    <input type="text" id="company" name="company" required placeholder="例：株式会社○○">
+                </div>
+
+                <div class="form-group">
+                    <label for="name">お名前 <span class="required">*</span></label>
+                    <input type="text" id="name" name="name" required placeholder="例：山田 太郎">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">メールアドレス <span class="required">*</span></label>
+                    <input type="email" id="email" name="email" required placeholder="例：example@company.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">電話番号</label>
+                    <input type="tel" id="phone" name="phone" placeholder="例：03-1234-5678">
+                </div>
+
+                <div class="form-group">
+                    <label for="industry">業種 <span class="required">*</span></label>
+                    <select id="industry" name="industry" required>
+                        <option value="">選択してください</option>
+                        <option value="福祉・介護">福祉・介護</option>
+                        <option value="製造業">製造業</option>
+                        <option value="運送・物流">運送・物流</option>
+                        <option value="飲食業">飲食業</option>
+                        <option value="宿泊業">宿泊業</option>
+                        <option value="清掃業">清掃業</option>
+                        <option value="建設業">建設業</option>
+                        <option value="その他">その他</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="service">ご興味のあるサービス <span class="required">*</span></label>
+                    <select id="service" name="service" required>
+                        <option value="">選択してください</option>
+                        <option value="CXOクラウド">CXOクラウド</option>
+                        <option value="HRクラウド">HRクラウド</option>
+                        <option value="DXクラウド">DXクラウド</option>
+                        <option value="複数のサービス">複数のサービス</option>
+                        <option value="まだ決まっていない">まだ決まっていない</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">お問い合わせ内容 <span class="required">*</span></label>
+                    <textarea id="message" name="message" required placeholder="貴社の経営課題や、ご相談内容をお聞かせください。"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" class="submit-button">送信する</button>
+                </div>
+
+                <div id="formMessage" style="margin-top: 20px; padding: 15px; border-radius: 8px; display: none;"></div>
+            </form>
+        </div>
+    </section>
+
+    <!-- お問い合わせ情報 -->
+    <section class="section section-gray">
+        <div class="container">
+            <h2 class="section-title">その他のお問い合わせ方法</h2>
+            
+            <div class="services-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); max-width: 900px; margin: 40px auto 0;">
+                <div class="service-card text-center">
+                    <div class="service-icon">📧</div>
+                    <h3>メール</h3>
+                    <p style="word-break: break-all;">
+                        <a href="mailto:info.gm.v.inc@gmail.com" style="color: var(--secondary-color);">
+                            info.gm.v.inc@gmail.com
+                        </a>
+                    </p>
+                    <p style="margin-top: 12px; font-size: 14px; color: var(--text-secondary);">
+                        お返事まで1〜2営業日いただく場合がございます。
+                    </p>
+                </div>
+
+                <div class="service-card text-center">
+                    <div class="service-icon">📍</div>
+                    <h3>所在地</h3>
+                    <p>
+                        〒550-0002<br>
+                        大阪府大阪市西区江戸堀２丁目１−１<br>
+                        江戸堀センタービル B1
+                    </p>
+                    <p style="margin-top: 12px; font-size: 14px; color: var(--text-secondary);">
+                        ※事前にご連絡をお願いいたします。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- よくある質問 -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">よくあるご質問</h2>
+            <p class="section-subtitle">
+                お問い合わせの前にご確認ください
+            </p>
+            
+            <div style="max-width: 800px; margin: 0 auto;">
+                <div style="margin-bottom: 32px; padding: 24px; background-color: var(--bg-white); border-radius: 12px; box-shadow: var(--shadow-sm); border-left: 4px solid var(--secondary-color);">
+                    <h3 style="margin-bottom: 12px; color: var(--primary-color);">Q. 相談は無料ですか？</h3>
+                    <p style="color: var(--text-secondary); line-height: 1.8;">
+                        A. はい、初回のご相談は無料です。貴社の課題をヒアリングし、最適なソリューションをご提案いたします。
+                    </p>
+                </div>
+
+                <div style="margin-bottom: 32px; padding: 24px; background-color: var(--bg-white); border-radius: 12px; box-shadow: var(--shadow-sm); border-left: 4px solid var(--secondary-color);">
+                    <h3 style="margin-bottom: 12px; color: var(--primary-color);">Q. どのような企業が対象ですか？</h3>
+                    <p style="color: var(--text-secondary); line-height: 1.8;">
+                        A. 福祉・製造・運送・飲食・ホテル・清掃・建設など、ブルーカラー領域の中小企業を中心にサポートしております。
+                    </p>
+                </div>
+
+                <div style="margin-bottom: 32px; padding: 24px; background-color: var(--bg-white); border-radius: 12px; box-shadow: var(--shadow-sm); border-left: 4px solid var(--secondary-color);">
+                    <h3 style="margin-bottom: 12px; color: var(--primary-color);">Q. サービスの料金体系は？</h3>
+                    <p style="color: var(--text-secondary); line-height: 1.8;">
+                        A. サービス内容や支援範囲により異なります。詳細はお問い合わせ時にご説明させていただきます。
+                    </p>
+                </div>
+
+                <div style="margin-bottom: 32px; padding: 24px; background-color: var(--bg-white); border-radius: 12px; box-shadow: var(--shadow-sm); border-left: 4px solid var(--secondary-color);">
+                    <h3 style="margin-bottom: 12px; color: var(--primary-color);">Q. どのくらいの期間で効果が出ますか？</h3>
+                    <p style="color: var(--text-secondary); line-height: 1.8;">
+                        A. 支援内容により異なりますが、最短で1ヶ月程度から効果を実感いただけるケースもあります。詳しくはご相談ください。
+                    </p>
+                </div>
+
+                <div style="padding: 24px; background-color: var(--bg-white); border-radius: 12px; box-shadow: var(--shadow-sm); border-left: 4px solid var(--secondary-color);">
+                    <h3 style="margin-bottom: 12px; color: var(--primary-color);">Q. オンラインでの相談は可能ですか？</h3>
+                    <p style="color: var(--text-secondary); line-height: 1.8;">
+                        A. はい、ZoomやGoogle Meetなどを活用したオンライン相談も可能です。全国どこからでもご相談いただけます。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- フッター -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>株式会社GM</h3>
+                    <div class="footer-info">
+                        <p>経営の全機能を、必要な分だけ。</p>
+                        <p>中小企業の経営課題を解決する、<br>新しい経営インフラ。</p>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>サービス</h3>
+                    <ul>
+                        <li><a href="cxo-cloud.html">CXOクラウド</a></li>
+                        <li><a href="hr-cloud.html">HRクラウド</a></li>
+                        <li><a href="dx-cloud.html">DXクラウド</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>会社情報</h3>
+                    <ul>
+                        <li><a href="about.html">会社概要</a></li>
+                        <li><a href="contact.html">お問い合わせ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section footer-info">
+                    <h3>お問い合わせ</h3>
+                    <p>Email: info.gm.v.inc@gmail.com</p>
+                    <p>〒550-0002<br>
+                    大阪府大阪市西区江戸堀２丁目１−１<br>
+                    江戸堀センタービル B1</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 株式会社GM. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
